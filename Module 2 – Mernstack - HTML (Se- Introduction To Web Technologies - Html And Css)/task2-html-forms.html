@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task-2 = HTML-Forms </title>
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" pattern="[a-zA-Z]+" required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" maxlength="30" required>
+
+            <br><br>
+
+            <label for="phone">Phone No.:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone no" pattern="[0-9]{10}"
+                title="Enter 10 digit No" required>
+
+            <br><br>
+
+            <label for="sub">Subjects:</label>
+            <select name="sub" id="sub">
+                <option value="" hidden>--Select--</option>
+                <option value="">Machine Learning</option>
+                <option value="">Software Testing</option>
+                <option value="">Full Stack Web Development</option>
+                <option value="">Data Warehouse and Data Minining</option>
+                <option value="">Scientific Research Management</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Message:</label>
+            <textarea name="" id="" cols="20" rows="2"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
